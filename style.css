@@ -1,5 +1,6 @@
 body{
     overflow-x:hidden;
+    border:10px dashed black;
 }
 header{
     background-color:cornflowerblue;
