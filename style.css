@@ -1,0 +1,14 @@
+body{
+    overflow-x:hidden;
+    border:10px dashed black;
+}
+header{
+    background-color:cornflowerblue;
+}
+#social{
+    padding-top:4%;
+    margin-bottom: 10px;
+}
+.icons:hover{
+    opacity: 0.5;
+}
