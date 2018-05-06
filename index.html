@@ -17,10 +17,12 @@
 
     <!-- libs and frameworks -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.min.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="style.css"/>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="fancybox/jquery.fancybox.min.js"></script>
   </head>
   <body>
     <header>
@@ -43,7 +45,7 @@
     <br>
     <main class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-5">
           <h3><span class="badge badge-secondary">Обо мне</span></h3>
           <p>Меня зовут Горшков Ян, я из Одессы, и я увлекаюсь разработкой .NET- приложений. Интересуюсь десктопной и веб-разработкой. Люблю работать над интересными задачами и разрабатывать различные алгоритмы. </p>
           <h3><span class="badge badge-secondary">Проекты</span></h3>
@@ -65,7 +67,7 @@
             <li>Git, GitHub, TFS</li>
           </ul>
         </div>
-        <div class="col-md-6 offset-md-2">
+        <div class="col-md-6 offset-md-1">
             <h3><span class="badge badge-secondary">Важные события</span></h3>
             <ul>
               <li>1998 - Появление на свет :)</li>
@@ -105,6 +107,43 @@
            </ul>
         </div>
       </div>
+      <h3><span class="badge badge-secondary">Фотографии грамот и дипломов</span></h3>
+      <div class="row">
+        <div class="col-md-2 col-4">
+            <a class="fancybox" data-fancybox="gallery" href="images/awards/Picture1.jpg"><img class="img-fluid" src="images/awards/Picture1.jpg" alt="Грамота - школьная олимпиада 8-класс"></a>
+        </div>
+        <div class="col-md-2 col-4">
+            <a class="fancybox" data-fancybox="gallery" href="images/awards/Picture2.jpg"><img class="img-fluid" src="images/awards/Picture2.jpg" alt="Грамота - школьная олимпиада 8-класс"></a>
+        </div>
+        <div class="col-md-2 col-4">
+            <a class="fancybox" data-fancybox="gallery" href="images/awards/Picture3.jpg"><img class="img-fluid" src="images/awards/Picture3.jpg" alt="Грамота - школьная олимпиада 8-класс"></a>
+        </div>
+        <div class="col-md-2 col-4">
+            <a class="fancybox" data-fancybox="gallery" href="images/awards/Picture4.jpg"><img class="img-fluid" src="images/awards/Picture4.jpg" alt="Грамота - школьная олимпиада 8-класс"></a>
+        </div>
+        <div class="col-md-2 col-4">
+            <a class="fancybox" data-fancybox="gallery" href="images/awards/Picture5.jpg"><img class="img-fluid" src="images/awards/Picture5.jpg" alt="Грамота - школьная олимпиада 8-класс"></a>
+        </div>
+        <div class="col-md-2 col-4">
+            <a class="fancybox" data-fancybox="gallery" href="images/awards/Picture6.jpg"><img class="img-fluid" src="images/awards/Picture6.jpg" alt="Грамота - школьная олимпиада 8-класс"></a>
+        </div>
+        <div class="col-md-2 col-4">
+            <a class="fancybox" data-fancybox="gallery" href="images/awards/Picture7.jpg"><img class="img-fluid" src="images/awards/Picture7.jpg" alt="Грамота - школьная олимпиада 8-класс"></a>
+        </div>
+        <div class="col-md-2 col-4">
+            <a class="fancybox" data-fancybox="gallery" href="images/awards/Picture8.jpg"><img class="img-fluid" src="images/awards/Picture8.jpg" alt="Грамота - школьная олимпиада 8-класс"></a>
+        </div>
+        <div class="col-md-2 col-4">
+            <a class="fancybox" data-fancybox="gallery" href="images/awards/Picture9.jpg"><img class="img-fluid" src="images/awards/Picture9.jpg" alt="Грамота - школьная олимпиада 8-класс"></a>
+        </div>
+      </div>
     </main>
   </body>
+  <script>
+    $(document).ready(function() {
+      $('[data-fancybox="gallery"]').fancybox({
+        loop:true
+      });
+    });
+  </script>
 </html>
